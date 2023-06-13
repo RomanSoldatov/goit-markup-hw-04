@@ -48,6 +48,8 @@ img {
 /* -------------------HEADER------- */
 .header-class {
   border-bottom: 1px solid var(--button-border-color);
+  box-shadow: зі значенням 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .header-container {
   display: flex;
@@ -97,9 +99,11 @@ img {
 }
 
 .header-list-link {
+  position: relative;
   color: var(--first-main-color);
   padding: 24px 0;
   display: block;
+  color: var(--second-accent-color);
 }
 
 .header-list .link:hover,
@@ -126,12 +130,22 @@ img {
 
 .header-adress-link {
   color: var(--second-main-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* -------------------HERO--------- */
 .hero {
   background-color: var(--first-main-color);
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   padding: 188px 0;
+  max-width: 1440px;
 }
 .hero-text {
   font-size: 56px;
@@ -160,6 +174,7 @@ img {
   border-radius: 4px;
   margin-left: auto;
   margin-right: auto;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero .link:hover,
