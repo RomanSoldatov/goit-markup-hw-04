@@ -117,6 +117,7 @@ img {
   left: 0;
   bottom: -1px;
   height: 4px;
+  width: 100%;
   background-color: var(--second-accent-color);
   border-radius: 2px;
 }
